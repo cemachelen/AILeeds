@@ -29,6 +29,7 @@ A Jekyll Built Page for the AI Leeds Group. Collaboration and contributions are 
 * Initial web pages
 
 <hr>
+
 # Contributing 1 #
 <!-- Link to Wiki/Templates Relevant web pages  -->
 There are 2 very easy ways to contribute:
@@ -53,7 +54,7 @@ Fancy making some website changes. This will be outlined here
 
 ## Submitting New Code ###
 
-<!-- Link to code review and guidelinss
+<!-- Link to code review and guidelinss -->
 
 # Acknowledgements #
 
