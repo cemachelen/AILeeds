@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-01-12T13:33:23+00:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">Building A Jekyll Site</title><link href="http://localhost:4000/2018/11/03/Building-a-jekyll-site.html" rel="alternate" type="text/html" title="Building A Jekyll Site" /><published>2018-11-03T00:00:00+00:00</published><updated>2018-11-03T00:00:00+00:00</updated><id>http://localhost:4000/2018/11/03/Building-a-jekyll-site</id><content type="html" xml:base="http://localhost:4000/2018/11/03/Building-a-jekyll-site.html">&lt;p&gt;Today I’ve been learning to use Jekyll to build a quick simple site. I’ve decided to do blog style site on various things I’m interested in. I found so many different templates but nothing I quite liked so decided to start from scratch and slowly build up a website - starting simple and then adding features. The first 3 steps can be done over a weekend to create a smart looking site!&lt;/p&gt;
+
+&lt;p&gt;Jekyll allows for a lot of the hard work to be automated and not have to repeat text e.g. Create default layouts in &lt;code class=&quot;highlighter-rouge&quot;&gt;_layouts&lt;/code&gt; and use them as templates simply by adding&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;---
+layout: default
+title: My Page Title
+---
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;This will set up the nav bar, css , js calls etc. This is familiar to me from my python flask work.&lt;/p&gt;
+
+&lt;h2 id=&quot;step-1---initial-basic-site-build&quot;&gt;Step 1 - Initial basic site build.&lt;/h2&gt;
+
+&lt;p&gt;Following the &lt;a href=&quot;https://jekyllrb.com/docs/step-by-step/&quot;&gt;step-by-step tutorial&lt;/a&gt;, with a few adjustments for example rather than authors I have different project themes. The fonts hurt eyes a little so I also added:&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    &lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;stylesheet&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;above the text style sheet. This allows to use the vast bootstrap css library. With the text style sheets below allowing for customisation.&lt;/p&gt;
+
+&lt;h2 id=&quot;step-2---population-with-initial-information&quot;&gt;Step 2 - Population with Initial information.&lt;/h2&gt;
+
+&lt;p&gt;Personally I think there’s not point in having a fancy empty site. So creating an example blog post, the project format. Thinking about what sort of things I would like to display is the next logical step. It starts out looking quite clunky but we can ‘prettyfy’ the site later.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Adding images. Personal jpgs can stored in the /img directory. I like to add in a silly &lt;a href=&quot;https://github.com/cemachelen/cemachelen.github.io/blob/master/404.html&quot;&gt;404&lt;/a&gt; pages as when you’re building a site you’re most likely going to see &lt;a href=&quot;https://cemachelen.github.io/hoot&quot;&gt;this&lt;/a&gt; from time to time.&lt;/li&gt;
+  &lt;li&gt;Populating the home page.
+    &lt;ul&gt;
+      &lt;li&gt;Add some containers to start introducing a layout to the page.
+        &lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;jumbotron text-center&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;h1&amp;gt;&lt;/span&gt;My Fancy Big Heading&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Link to github, twitter, linked in:
+        &lt;ul&gt;
+          &lt;li&gt;I decided to go for slightly bespoke buttons found &lt;a href=&quot;https://codepen.io/ruandre/pen/howFi&quot;&gt;here&lt;/a&gt;. This requires directly coding the button as in the examples. This is done by adding a &lt;a href=&quot;https://github.com/cemachelen/cemachelen.github.io/blob/master/assets/css/social.css&quot;&gt;/assets/css/social.css&lt;/a&gt; and loading it in either to the default.html or to index.html if you think you’re only adding to home page. Then relevant html code is added to index html.&lt;/li&gt;
+          &lt;li&gt;I’ve then edited the hex colours to match the  relevant logos. And to hover to grey on a turquoise background.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Thinking about layout of nav bar.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;So we end up with a very basic looking site like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;image coming soon&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;step-3---fancyfy&quot;&gt;Step 3 - “Fancyfy”&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;Under development&lt;/em&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Page width&lt;/li&gt;
+  &lt;li&gt;Header and footers&lt;/li&gt;
+  &lt;li&gt;Swish nav bar&lt;/li&gt;
+  &lt;li&gt;Responsive pages&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;step-4---improve-along-the-way&quot;&gt;Step 4 - Improve along the way&lt;/h2&gt;
+
+&lt;p&gt;As I work in software development I’m likely to come across new features tips etc. To improve my site and will be adding them. I’ll try to add these either here or in separate blod posts with I’ll link here.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;em&gt;Improvements will be listed here&lt;/em&gt;&lt;/li&gt;
+&lt;/ol&gt;</content><author><name></name></author><summary type="html">Today I’ve been learning to use Jekyll to build a quick simple site. I’ve decided to do blog style site on various things I’m interested in. I found so many different templates but nothing I quite liked so decided to start from scratch and slowly build up a website - starting simple and then adding features. The first 3 steps can be done over a weekend to create a smart looking site!</summary></entry></feed>
