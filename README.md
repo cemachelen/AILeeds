@@ -13,6 +13,8 @@ Repository for Leeds AI group Site
 [![GitHub release](https://img.shields.io/badge/release-v.1.0-blue.svg)](
 https://github.com/cemac/RSELeeds/AILeeds/releases/tag/1.0)
 
+[![Join the chat at https://gitter.im/AILeeds](https://badges.gitter.im/AILeeds.svg)](https://gitter.im/AILeeds?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 ## Description ##
 
 A Jekyll Built Page for the AI Leeds Group. Collaboration and contributions are very welcome. 
