@@ -1,8 +1,8 @@
 - name: Home
-  link: ../
+  link: /AILeeds/
 - name: About
-  link: ../about.html
+  link: /AILeeds/about.html
 - name: Blog
-  link: ../blog.html
+  link: /AILeeds/blog.html
 - name: Projects
-  link: ../projects.html
+  link: /AILeeds/projects.html
