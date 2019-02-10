@@ -19,7 +19,3 @@ AI Leeds Description
 * Learn new skills
 * Keep up with cutting edge AI
 * Cross Disciplinary
-
-<center>
-<img src="{{ site.baseurl }}/img/rockclimb.jpg"  width="400" />
-</center>
